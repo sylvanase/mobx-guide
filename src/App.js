@@ -27,6 +27,14 @@ class App extends Component {
 						</div>
 					))}
 				</div> */}
+				<div>
+					<input
+						type="text"
+						value={counter.username}
+						onChange={(e) => counter.changeUsername(e.target.value)}
+					/>
+				</div>
+				{counter.username}
 			</div>
 		)
 	}
